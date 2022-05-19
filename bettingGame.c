@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-void Play(int bet);
+void Play(int bet); 
 
 int cash = 100;
 int main()
 {
-    printf("**Welcome to Virtual casino**\n\n");
+
+    printf("**Welcome to Virtual casino**\n\n");  
     printf("Total cash = $%d\n",cash);
     int bet;
     while (cash > 0)
     {
         printf("What's your bet? $");
-        scanf("%d",&bet);
+        scanf("%d",&bet);   // This save the amount the player want to bet into the address of variable "bet"
         if(bet == 0 || bet > cash) break;
         Play(bet);
         printf("\n**************************************\n");
